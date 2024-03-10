@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj": {}
+    "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj": {
+    "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj",
+        "projectUniqueName": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj",
         "projectName": "DatabasovyProjektPV",
-        "projectPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj",
+        "projectPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\obj\\",
+        "outputPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,7 +50,7 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0-preview.1.24080.9, )"
             }
           },
           "imports": [

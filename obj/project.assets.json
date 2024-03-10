@@ -267,19 +267,19 @@
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/8.0.0": {
+      "System.Configuration.ConfigurationManager/9.0.0-preview.1.24080.9": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "8.0.0"
+          "System.Security.Cryptography.ProtectedData": "9.0.0-preview.1.24080.9"
         },
         "compile": {
-          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
@@ -329,7 +329,7 @@
           }
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -437,16 +437,19 @@
           }
         }
       },
-      "System.Security.Cryptography.ProtectedData/8.0.0": {
+      "System.Security.Cryptography.ProtectedData/9.0.0-preview.1.24080.9": {
         "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
         "compile": {
-          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets": {}
         }
       },
       "System.Security.Principal.Windows/5.0.0": {
@@ -990,10 +993,10 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/8.0.0": {
-      "sha512": "JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
+    "System.Configuration.ConfigurationManager/9.0.0-preview.1.24080.9": {
+      "sha512": "7V6nuqJ/ckZrl+ui+UDBnZyDC9KMarJ6ZuDmzYGbvR+jbX79TU++5J3K7caDV903PqunezDVxCdyP/rWYvLTCQ==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/8.0.0",
+      "path": "system.configuration.configurationmanager/9.0.0-preview.1.24080.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1003,19 +1006,17 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
         "lib/net462/System.Configuration.ConfigurationManager.dll",
         "lib/net462/System.Configuration.ConfigurationManager.xml",
-        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
-        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
         "lib/net8.0/System.Configuration.ConfigurationManager.dll",
         "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.9.0.0-preview.1.24080.9.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1112,10 +1113,10 @@
         "version.txt"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1129,7 +1130,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.5.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1464,10 +1465,10 @@
         "version.txt"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/8.0.0": {
-      "sha512": "+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+    "System.Security.Cryptography.ProtectedData/9.0.0-preview.1.24080.9": {
+      "sha512": "kky/e+bNFjXzTEmcmhElo1GdNDYAlD6gH8BF9r8oX3uGdXKfamrVRrTM+be5jCpURIxZS9T5K0G5jY0ZQgmAMw==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/8.0.0",
+      "path": "system.security.cryptography.protecteddata/9.0.0-preview.1.24080.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1477,25 +1478,23 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net462/System.Security.Cryptography.ProtectedData.dll",
         "lib/net462/System.Security.Cryptography.ProtectedData.xml",
-        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
-        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net9.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.9.0.0-preview.1.24080.9.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1710,7 +1709,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.Data.SqlClient >= 5.2.0",
-      "System.Configuration.ConfigurationManager >= 8.0.0"
+      "System.Configuration.ConfigurationManager >= 9.0.0-preview.1.24080.9"
     ]
   },
   "packageFolders": {
@@ -1720,11 +1719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj",
+      "projectUniqueName": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj",
       "projectName": "DatabasovyProjektPV",
-      "projectPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\DatabasovyProjektPV.csproj",
+      "projectPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\DatabasovyProjektPV.csproj",
       "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabasovyProjektPV\\obj\\",
+      "outputPath": "C:\\Users\\jakub\\OneDrive\\Plocha\\Skola\\2023-24\\PV\\DatabazovyProjektPVGitHUB\\DatabazovyProjekt-PV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1763,7 +1762,7 @@
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[9.0.0-preview.1.24080.9, )"
           }
         },
         "imports": [
