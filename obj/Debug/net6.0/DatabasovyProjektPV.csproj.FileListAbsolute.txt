@@ -1,0 +1,5 @@
+C:\Users\jakub\OneDrive\Plocha\Skola\2023-24\PV\DatabasovyProjektPV\obj\Debug\net6.0\DatabasovyProjektPV.csproj.AssemblyReference.cache
+C:\Users\jakub\OneDrive\Plocha\Skola\2023-24\PV\DatabasovyProjektPV\obj\Debug\net6.0\DatabasovyProjektPV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakub\OneDrive\Plocha\Skola\2023-24\PV\DatabasovyProjektPV\obj\Debug\net6.0\DatabasovyProjektPV.AssemblyInfoInputs.cache
+C:\Users\jakub\OneDrive\Plocha\Skola\2023-24\PV\DatabasovyProjektPV\obj\Debug\net6.0\DatabasovyProjektPV.AssemblyInfo.cs
+C:\Users\jakub\OneDrive\Plocha\Skola\2023-24\PV\DatabasovyProjektPV\obj\Debug\net6.0\DatabasovyProjektPV.csproj.CoreCompileInputs.cache
