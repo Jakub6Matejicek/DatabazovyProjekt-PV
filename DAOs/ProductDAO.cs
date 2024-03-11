@@ -15,7 +15,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("DELETE FROM Products WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Product WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", element.ID);
                 command.ExecuteNonQuery();
@@ -27,7 +27,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Products", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Product", conn))
             {
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -50,7 +50,7 @@ namespace DatabasovyProjektPV.DAOs
             Product product = null;
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Products WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Product WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", id);
                 SqlDataReader reader = command.ExecuteReader();
@@ -77,7 +77,7 @@ namespace DatabasovyProjektPV.DAOs
 
             if (element.ID < 1)
             {
-                using (command = new SqlCommand("INSERT INTO Products (Name, Price, IsStocked) VALUES (@name, @price, @isStocked); SELECT SCOPE_IDENTITY()", conn))
+                using (command = new SqlCommand("INSERT INTO Product (Name, Price, IsStocked) VALUES (@name, @price, @isStocked); SELECT SCOPE_IDENTITY()", conn))
                 {
                     command.Parameters.AddWithValue("@name", element.Name);
                     command.Parameters.AddWithValue("@price", element.Price);
@@ -87,7 +87,7 @@ namespace DatabasovyProjektPV.DAOs
             }
             else
             {
-                using (command = new SqlCommand("UPDATE Products SET Name = @name, Price = @price, IsStocked = @isStocked WHERE ID = @id", conn))
+                using (command = new SqlCommand("UPDATE Product SET Name = @name, Price = @price, IsStocked = @isStocked WHERE ID = @id", conn))
                 {
                     command.Parameters.AddWithValue("@name", element.Name);
                     command.Parameters.AddWithValue("@price", element.Price);

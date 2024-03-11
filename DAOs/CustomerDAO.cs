@@ -15,7 +15,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("DELETE FROM Customers WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Customer WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", element.ID);
                 command.ExecuteNonQuery();
@@ -27,7 +27,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Customers", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Customer", conn))
             {
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -51,7 +51,7 @@ namespace DatabasovyProjektPV.DAOs
             Customer customer = null;
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Customers WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Customer WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", id);
                 SqlDataReader reader = command.ExecuteReader();
@@ -79,7 +79,7 @@ namespace DatabasovyProjektPV.DAOs
 
             if (element.ID < 1)
             {
-                using (command = new SqlCommand("INSERT INTO Customers (FirstName, LastName, Email, RegistrationDate) VALUES (@firstName, @lastName, @email, @registrationDate); SELECT SCOPE_IDENTITY()", conn))
+                using (command = new SqlCommand("INSERT INTO Customer (FirstName, LastName, Email, RegistrationDate) VALUES (@firstName, @lastName, @email, @registrationDate); SELECT SCOPE_IDENTITY()", conn))
                 {
                     command.Parameters.AddWithValue("@firstName", element.FirstName);
                     command.Parameters.AddWithValue("@lastName", element.LastName);
@@ -90,7 +90,7 @@ namespace DatabasovyProjektPV.DAOs
             }
             else
             {
-                using (command = new SqlCommand("UPDATE Customers SET FirstName = @firstName, LastName = @lastName, Email = @email, RegistrationDate = @registrationDate WHERE ID = @id", conn))
+                using (command = new SqlCommand("UPDATE Customer SET FirstName = @firstName, LastName = @lastName, Email = @email, RegistrationDate = @registrationDate WHERE ID = @id", conn))
                 {
                     command.Parameters.AddWithValue("@firstName", element.FirstName);
                     command.Parameters.AddWithValue("@lastName", element.LastName);

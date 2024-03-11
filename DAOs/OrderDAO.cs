@@ -15,7 +15,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("DELETE FROM Orders WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Order WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", element.ID);
                 command.ExecuteNonQuery();
@@ -27,7 +27,7 @@ namespace DatabasovyProjektPV.DAOs
         {
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Orders", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Order", conn))
             {
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -50,7 +50,7 @@ namespace DatabasovyProjektPV.DAOs
             Order order = null;
             SqlConnection conn = DatabaseSingleton.GetInstance();
 
-            using (SqlCommand command = new SqlCommand("SELECT * FROM Orders WHERE ID = @id", conn))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Order WHERE ID = @id", conn))
             {
                 command.Parameters.AddWithValue("@id", id);
                 SqlDataReader reader = command.ExecuteReader();
@@ -77,7 +77,7 @@ namespace DatabasovyProjektPV.DAOs
 
             if (element.ID < 1)
             {
-                using (command = new SqlCommand("INSERT INTO Orders (Date, CustomerId, TotalPrice) VALUES (@date, @customerId, @totalPrice); SELECT SCOPE_IDENTITY()", conn))
+                using (command = new SqlCommand("INSERT INTO Order (Date, CustomerId, TotalPrice) VALUES (@date, @customerId, @totalPrice); SELECT SCOPE_IDENTITY()", conn))
                 {
                     command.Parameters.AddWithValue("@date", element.Date);
                     command.Parameters.AddWithValue("@customerId", element.CustomerId);
@@ -87,7 +87,7 @@ namespace DatabasovyProjektPV.DAOs
             }
             else
             {
-                using (command = new SqlCommand("UPDATE Orders SET Date = @date, CustomerId = @customerId, TotalPrice = @totalPrice WHERE ID = @id", conn))
+                using (command = new SqlCommand("UPDATE Order SET Date = @date, CustomerId = @customerId, TotalPrice = @totalPrice WHERE ID = @id", conn))
                 {
                     command.Parameters.AddWithValue("@date", element.Date);
                     command.Parameters.AddWithValue("@customerId", element.CustomerId);
