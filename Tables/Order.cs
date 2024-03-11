@@ -18,6 +18,7 @@ namespace DatabasovyProjektPV.Tables
         public DateTime Date { get => date; set => date = value; }
         public int CustomerId { get => customerId; set => customerId = value; }
         public float TotalPrice { get => totalPrice; set => totalPrice = value; }
+        public int CustomerID { get; internal set; }
 
         public Order(int id, DateTime date, int customerId, float totalPrice)
         {

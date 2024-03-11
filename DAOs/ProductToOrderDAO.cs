@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DatabasovyProjektPV.DAOs
 {
-    internal class ProductToOrderDAO : IRepozitory<ProductToOrder>
+    internal class ShipToOrderDAO : IRepozitory<ProductToOrder>
     {
         public void Delete(ProductToOrder element)
         {
